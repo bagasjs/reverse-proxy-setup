@@ -2,8 +2,15 @@ version: 3.8
 services:
   proxy:
     image: nginx:latest
+    restart: unless-stopped
     ports:
       - 80:80
       - 443:443
     volumes:
-      -
+      - ./config:/etc/nginx/conf.d
+    networks:
+      - reverse-proxy
+
+networks:
+  reverse-proxy:
+    external: true

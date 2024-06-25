@@ -1,3 +1,3 @@
 FROM nginx:latest
 
-CMD /bin/sh init.sh
+CMD [ "/bin/sh",  "init.sh" ]

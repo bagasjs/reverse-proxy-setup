@@ -10,3 +10,4 @@ do
     ln -sf "$SOURCE_DIR/$filename" "$TARGET_DIR/$filename"
 done
 
+nginx

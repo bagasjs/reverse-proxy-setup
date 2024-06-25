@@ -12,10 +12,7 @@ services:
       - 80:80
       - 443:443
     volumes:
-      - ./config:/etc/nginx/conf.d
-      - ./sites-available:/etc/nginx/sites-available
-      - ./sites-enabled:/etc/nginx/sites-enabled
-      - ./init.sh:/init.sh
+      - ./config/:/etc/nginx/conf.d/
     networks:
       - reverse-proxy
 

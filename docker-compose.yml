@@ -1,12 +1,7 @@
 version: "3.8"
 services:
   proxy:
-    image: proxy
-    build:
-      args:
-        uid: 1000
-      context: .
-      dockerfile: Dockerfile
+    image: nginx:latest
     restart: unless-stopped
     ports:
       - 80:80

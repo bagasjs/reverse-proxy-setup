@@ -15,6 +15,7 @@ services:
       - ./config:/etc/nginx/conf.d
       - ./sites-available:/etc/nginx/sites-available
       - ./sites-enabled:/etc/nginx/sites-enabled
+      - ./init.sh:/init.sh
     networks:
       - reverse-proxy
 
